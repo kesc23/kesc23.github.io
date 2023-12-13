@@ -32,7 +32,6 @@ div:has( > #nav ) {
     @media (min-width: 930px) { animation-name: flexx; flex-direction: column; }
     @media (max-width: 616px) { padding-block: 12px!important; }
     animation-timeline: --htmlscroll;
-    flex-direction: row!important;
     align-items: center;
     justify-content: space-between;
     & h2 { display: none };
