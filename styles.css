@@ -4,6 +4,7 @@
 
 :root {
     --min-size: 84px;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -18,12 +19,18 @@ html {
 
 div:has( > #nav ) {
     height: min-content;
-    & h2 { display: none };
+    @media( max-width: 929px ) {
+        & h2 { display: none };
+    }
     @media( min-width: 930px ) {
         animation-name: rowfy;
         height: 100%;
         max-height: 500px;
-        & h2 { display: unset };
+        & h2 {
+            animation-name: hide;
+            animation-timeline: --htmlscroll;
+            animation-duration: 1ms;
+        }
     }
     animation-timeline: --htmlscroll;
 }
@@ -34,11 +41,12 @@ div:has( > #nav ) {
     animation-timeline: --htmlscroll;
     align-items: center;
     justify-content: space-between;
-    & h2 { display: none };
 }
 
 #cont {
-    @media (min-width: 930px) { animation-name: extend; margin-top: 500px; }  
+    --margin: 40px;
+    margin-top: var(--margin);
+    @media (min-width: 930px) { animation-name: extend; margin-top: calc( 500px + var(--margin) ); }  
     animation-timeline: --htmlscroll;
 }
 
@@ -52,6 +60,16 @@ div:has( > #nav ) {
 
 @keyframes rowfy {
     40%, to { max-height: var(--min-size); }
+}
+
+@keyframes hide {
+    18%, to {
+        overflow: hidden;
+        display: none;
+        opacity: 0;
+        height: 0px;
+        width: 0px;
+    }
 }
 
 @keyframes extend {
@@ -78,4 +96,8 @@ div:has( > #nav ) {
             }
         }
     }
+}
+
+.section {
+    padding: 20px;
 }
