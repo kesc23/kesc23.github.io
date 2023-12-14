@@ -15,11 +15,11 @@
 <svelte:window bind:scrollY={y}></svelte:window>
 
 <header style="box-shadow: 0px -95px 130px;">
-    <div class="p-5" style="display: flex; flex-wrap: wrap; max-height: 100%; max-width: 1200px; width: 100%; margin-inline: auto;" id="nav">
+    <div class="p-5 h-full" style="display: flex; flex-wrap: wrap; max-height: 100%; max-width: 1200px; width: 100%; margin-inline: auto;" id="nav">
         <h1>Kevin Campos (Kesc23)</h1>
         <h2 class="{hideonscroll}">Site em Construção</h2>
         <nav>
-            <ul class="flex gap-2 p-[unset] m-[unset]">
+            <ul class="flex flex-wrap gap-2 p-[unset] m-[unset]">
                 <li><a class="_menubtn dark:hover:!text-base-content" href="#projetos">Projetos</a></li>
                 <li><a class="_menubtn dark:hover:!text-base-content" href="#sobremim">Sobre mim</a></li>
                 <li><a class="_menubtn dark:hover:!text-base-content" href="#servicos">Serviços</a></li>
