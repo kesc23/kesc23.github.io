@@ -1,5 +1,6 @@
 :root {
     --min-size: 84px;
+    --exit: 450px;
     scroll-behavior: smooth;
 }
 
@@ -20,8 +21,7 @@ header {
     }
     @media( min-width: 930px ) {
         animation-name: rowfy;
-        height: 100%;
-        max-height: 500px;
+        animation-range: entry 0px exit var(--exit);
         & h2 {
             animation-name: hide;
             animation-timeline: --htmlscroll;
@@ -32,9 +32,12 @@ header {
 }
 
 #nav {
-    @media (min-width: 930px) { animation-name: flexx; flex-direction: column; }
+    @media (min-width: 930px) {
+        animation-name: flexx;
+        animation-timeline: --htmlscroll;
+        animation-range: entry 0px exit var(--exit);
+    }
     @media (max-width: 929px) { padding: 20px!important; }
-    animation-timeline: --htmlscroll;
     align-items: center;
     justify-content: space-between;
 }
@@ -48,7 +51,10 @@ header {
 }
 
 @keyframes flexx {
-    40%, to {
+    from {
+        flex-direction: column;
+    }
+    to {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -56,11 +62,12 @@ header {
 }
 
 @keyframes rowfy {
-    40%, to { max-height: var(--min-size); }
+    from { max-height: 500px; height: 100% }
+    to { max-height: var(--min-size); height: 100% }
 }
 
 @keyframes hide {
-    18%, to {
+    22%, to {
         overflow: hidden;
         display: none;
         opacity: 0;
