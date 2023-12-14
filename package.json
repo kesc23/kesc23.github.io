@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build -l silent",
+		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
@@ -14,8 +14,12 @@
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.27.4",
+		"autoprefixer": "^10.4.16",
+		"daisyui": "^4.4.19",
+		"postcss": "^8.4.32",
 		"svelte": "^4.2.7",
 		"svelte-check": "^3.6.0",
+		"tailwindcss": "^3.3.6",
 		"typescript": "^5.0.0",
 		"vite": "^4.4.2"
 	},
