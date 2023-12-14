@@ -1,6 +1,7 @@
 <script>
     import '$lib/styles.css';
     let y;
+    let hideonscroll = '';
 
     $: hideonscroll = y > 170 ? 'hidden' : '';
 </script>
@@ -11,6 +12,7 @@
     <title>Kevin Campos</title>
     <script type="application/ld+json">{ "@context": "https://schema.org/", "@type": "ProfilePage", "mainEntity": { "@type": "Person", "name": "Kevin Campos", "url": "https://kevincampos.com.br", "image": "https://kevincampos.com.br/kevin.png", "sameAs": [ "https://www.linkedin.com/in/kevinsouzacampos/", "https://github.com/kesc23/" ], "jobTitle": "Communications Analyst", "worksFor": { "@type": "Organization",   "name": "Teknisa" } } }</script>
 </svelte:head>
+<svelte:window bind:scrollY={y}></svelte:window>
 
 <header style="box-shadow: 0px -95px 130px;">
     <div class="p-5" style="display: flex; flex-wrap: wrap; max-height: 100%; max-width: 1200px; width: 100%; margin-inline: auto;" id="nav">
