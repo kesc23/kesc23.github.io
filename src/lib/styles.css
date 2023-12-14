@@ -40,9 +40,10 @@ header {
 }
 
 #cont {
-    --margin: 80px;
-    margin-top: var(--margin);
-    @media (min-width: 930px) { animation-name: extend; margin-top: calc( 500px + var(--margin) ); }  
+    margin-top: 120px;
+    @media (min-width: 930px) {
+         margin-top: 500px;
+    }  
     animation-timeline: --htmlscroll;
 }
 
@@ -67,12 +68,6 @@ header {
         width: 0px;
     }
 }
-
-@keyframes extend {
-    45%  { margin-top: calc( var(--min-size) + 500px); }
-    to   { margin-top: calc( var(--min-size) ); }
-}
-    
 
 li { padding: unset; margin: unset; }
 
