@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit';
 
 /** @type string[] */
-let posts = [];
+let posts = ['a'];
 
 /** @type {import('./$types').EntryGenerator} */
 export function entries() {
