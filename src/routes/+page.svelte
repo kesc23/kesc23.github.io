@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="description" content="Sou Kevin Campos, Desenvolvedor Full-stack e Gestor de tráfego. Juntos, podemos tirar suas ideias do papel e fazer seu negócio chegar em um público altamente qualificado!">
     <title>Kevin Campos</title>
     <script type="application/ld+json">{ "@context": "https://schema.org/", "@type": "ProfilePage", "mainEntity": { "@type": "Person", "name": "Kevin Campos", "url": "https://kevincampos.com.br", "image": "https://kevincampos.com.br/kevin.png", "sameAs": [ "https://www.linkedin.com/in/kevinsouzacampos/", "https://github.com/kesc23/" ], "jobTitle": "Communications Analyst", "worksFor": { "@type": "Organization",   "name": "Teknisa" } } }</script>
 </svelte:head>
