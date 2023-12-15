@@ -11,6 +11,9 @@ const config = {
 			pages: 'build',
 			assets: 'build',
 		}),
+		paths: {
+			relative: false
+		}
 	},
 	preprocess: vitePreprocess()
 };

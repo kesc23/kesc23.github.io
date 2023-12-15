@@ -1,4 +1,5 @@
 <svelte:head>
+    <link rel="preload" href="https://unpkg.com/">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 </svelte:head>
 <div class="flex flex-col h-full w-full max-w-full justify-center items-center">
