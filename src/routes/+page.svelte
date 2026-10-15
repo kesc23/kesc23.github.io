@@ -1,6 +1,6 @@
 <script>
     import { domain } from "$lib/variables";
-    // import NavButton from '$lib/NavButton.svelte';
+    import NavButton from '$lib/NavButton.svelte';
     import "$lib/styles.css";
     let y = $state(0);
     let hideonscroll = $derived(y > 95 ? "hidden" : "");
@@ -50,7 +50,7 @@
         <h2 class={hideonscroll}>Site em Construção</h2>
         <nav>
             <ul class="flex flex-wrap gap-2 p-[unset] m-[unset]">
-                <!-- <NavButton link="#projetos" label="Projetos">Projetos</NavButton>
+                <NavButton link="#projetos" label="Projetos">Projetos</NavButton>
                 <NavButton link="#sobremim" label="Sobre mim">Sobre mim</NavButton>
                 <!-- <NavButton link="/blog" label="Blog">Blog</NavButton> -->
                 <NavButton class="group" link="https://github.com/kesc23/" label="Github Kesc23">
@@ -58,7 +58,7 @@
                 </NavButton>
                 <NavButton class="group" link="https://linkedin.com/in/kevinsouzacampos/" label="Linkedin">
                     <svg class="fill-base-content dark:group-hover:fill-base-content group-hover:fill-white transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                </NavButton> -->
+                </NavButton>
             </ul>
         </nav>
     </div>
