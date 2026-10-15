@@ -1,12 +1,11 @@
-import { DB_VERSION } from "$lib/variables";
+import { DB_VERSION } from "../variables.js";
 import type { Database } from "sqlite";
 
 export async function needsMigration( db: Database ): Promise<Boolean> {
     let result = await db.get( 'SELECT o.value FROM options o WHERE o.name = "version"');
 
     if( ! result ) {
-        const stmt = await db.prepare( "INSERT INTO options(name, value) VALUES ( ?, ? )", [ "version", DB_VERSION ] )
-        stmt.run();
+        await db.run("INSERT OR IGNORE INTO options(name, value) VALUES (?, ?)", ["version", DB_VERSION]);
         return false;
     }
 
@@ -28,8 +27,7 @@ export async function migrate( database: Database ) {
                 await migrations[i + 1]( database );
             }
 
-            const stmt = await db.prepare( "UPDATE options SET value = ? WHERE name = 'version' " )
-            await stmt.run( [ DB_VERSION ], err => { if( err ) throw( err ); });
+            await database.run("UPDATE options SET value = ? WHERE name = 'version'", [DB_VERSION]);
 
             await db.run("COMMIT;")
         } catch( err ) {
