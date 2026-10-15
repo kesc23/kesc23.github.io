@@ -7,12 +7,36 @@
 </script>
 
 <svelte:head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <meta name="description" content="Sou Kevin Campos, Desenvolvedor Full-stack e Gestor de tráfego. Juntos, podemos tirar suas ideias do papel e fazer seu negócio chegar em um público altamente qualificado!">
+    <link rel="canonical" href={domain + "/"} />
+    <meta
+        name="description"
+        content="Sou Kevin Campos, desenvolvedor de software com mais de 5 anos de experiência. Trabalho com Python, integração de IA e LLMs, RAG, PyTorch e automação."
+    />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "ProfilePage",
+            "mainEntity": {
+                "@type": "Person",
+                "name": "Kevin Campos",
+                "url": "https://kevincampos.com.br",
+                "image": "https://kevincampos.com.br/kevin.png",
+                "sameAs": [
+                    "https://www.linkedin.com/in/kevinsouzacampos/",
+                    "https://github.com/kesc23/"
+                ],
+                "jobTitle": "Software Developer Analyst",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Inter",
+                    "alternateName": "Banco Inter",
+                    "url": "https://inter.co/",
+                    "description": "Plataforma digital de serviços financeiros com soluções bancárias, investimentos, crédito, seguros e marketplace."
+                }
+            }
+        }
+    </script>
     <title>Kevin Campos</title>
-    <script type="application/ld+json">{ "@context": "https://schema.org/", "@type": "ProfilePage", "mainEntity": { "@type": "Person", "name": "Kevin Campos", "url": "https://kevincampos.com.br", "image": "https://kevincampos.com.br/kevin.png", "sameAs": [ "https://www.linkedin.com/in/kevinsouzacampos/", "https://github.com/kesc23/" ], "jobTitle": "Communications Analyst", "worksFor": { "@type": "Organization",   "name": "Teknisa" } } }</script>
 </svelte:head>
 <svelte:window bind:scrollY={y} />
 
