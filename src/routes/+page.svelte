@@ -67,15 +67,75 @@
     <div class="max-w-[1200px] mx-auto">
         <div id="projetos" class="section">
             <h2>Projetos</h2>
-            <br><br>
-            <br><br>
-            <br><br>
+            <p>
+                Da visão computacional aos agentes de IA, desenvolvo soluções que
+                conectam tecnologia às tarefas do dia a dia. Estes são alguns dos
+                projetos em que trabalhei:
+            </p>
+            <ul class="list-disc pl-6 space-y-3">
+            <li>
+                <strong>Detecção e reconhecimento facial:</strong>
+                Na Teknisa, trabalhei em projetos de detecção e reconhecimento
+                facial, com foco em inferência em tempo real e baixa latência.
+            </li>
+            <li>
+                <strong>AI Voice:</strong>
+                Participei da implementação de soluções de IA por voz na Teknisa
+                para ajuste de inventário, requisição por serviço e pedidos,
+                simplificando operações que antes dependiam de várias interações
+                com o sistema.
+            </li>
+            <li>
+                <strong>TekHelper:</strong>
+                Trabalhei no TekHelper, um agente de suporte para os produtos
+                Teknisa. Minha atuação com IA inclui integração de LLMs e RAG
+                para conectar respostas ao conhecimento relevante de cada solução.
+            </li>
+            <li>
+                <strong>SvelteKit Capacitor:</strong>
+                Meu projeto pessoal para criar aplicativos híbridos com SvelteKit e
+                CapacitorJS, com hot reloading para Android e iOS, aproximando
+                o desenvolvimento web da experiência mobile.
+            </li>
+            </ul>
+            <p>
+                Conheça meus projetos e experimentos no
+                <a class="link" href="https://github.com/kesc23/">GitHub</a>.
+            </p>
         </div>
         <div id="sobremim" class="section">
             <h2>Sobre mim</h2>
+            <p>
+                Olá! Sou Kevin Campos, desenvolvedor de software em Belo Horizonte,
+                com mais de cinco anos de experiência. Atualmente, atuo como
+                Software Developer Analyst no Inter, com foco em Python,
+                integração de IA e LLMs, RAG e PyTorch.
+            </p>
+            <p>
+                Gosto de transformar processos trabalhosos em soluções simples de
+                usar. Já coloquei em produção aplicações com visão computacional,
+                IA generativa, APIs REST, gRPC e automações que, somadas,
+                economizaram mais de 300 mil minutos de tarefas manuais.
+            </p>
+            <p>
+                Minha trajetória passa pelo desenvolvimento web, mobile e pela
+                comunicação. Trabalhei
+                na Teknisa com soluções de software e inteligência artificial,
+                onde recebi o Prêmio de Inovação e Inteligência em 2025 e conquistei
+                o primeiro lugar no 3º Hackathon Teknisa, em 2023.
+            </p>
+            <p>
+                Além de Python, trabalho com Kotlin, TypeScript, Node.js, Svelte,
+                PHP, Laravel e bancos de dados como PostgreSQL e MySQL. Escolho
+                as ferramentas de acordo com o problema, buscando entregar
+                sistemas úteis, rápidos e fáceis de manter.
+            </p>
         </div>
+        <!--
         <div id="servicos" class="section">
             <h2>Serviços</h2>
         </div>
+        -->
     </div>
 </div>
+
