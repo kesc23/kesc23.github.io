@@ -2,6 +2,19 @@
 @plugin "daisyui";
 @plugin "@tailwindcss/typography";
 
+@theme {
+    --font-sans: "Lexend", sans-serif;
+}
+
+@layer base {
+    h1 {
+        @apply text-2xl font-bold tracking-tight;
+    }
+
+    h2 {
+        @apply text-2xl font-semibold;
+    }
+}
 
 html {
     @apply scroll-pt-24;

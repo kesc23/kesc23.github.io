@@ -68,7 +68,7 @@
     </div>
 </header>
 <div id="cont">
-    <div class="max-w-[1200px] mx-auto">
+    <div class="prose dark:prose-invert max-w-[1200px] mx-auto">
         <div id="projetos" class="section">
             <h2>Projetos</h2>
             <p>
