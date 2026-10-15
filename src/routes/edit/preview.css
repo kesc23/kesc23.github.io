@@ -1,0 +1,35 @@
+@reference "../../app.css";
+
+.editor-preview.editor-preview-active {
+    @apply prose bg-base-100 max-w-full;
+}
+.editor-toolbar {
+    @apply bg-base-300;
+}
+
+.editor-toolbar a { 
+    &::before { @apply text-base-content; }
+    &:hover {
+        &::before { @apply text-base-300; }
+        @apply bg-base-content;
+    }
+}
+
+.CodeMirror.cm-s-paper.CodeMirror-wrap, .CodeMirror, .CodeMirror-scroll {
+    @apply bg-base-100;
+}
+
+.CodeMirror, .CodeMirror-scroll {
+    @apply prose max-w-full min-h-[400px];
+}
+.CodeMirror .CodeMirror-scroll {
+    @apply max-h-[calc(100vh-180px)] overflow-y-auto;
+}
+
+.CodeMirror-vscrollbar{
+    @apply !hidden;
+}
+
+.CodeMirror-cursor {
+    @apply !border-l-info;
+}

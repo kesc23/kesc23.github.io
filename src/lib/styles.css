@@ -9,7 +9,6 @@ html, body {
 }
 
 html {
-    font-family: 'Lexend', sans-serif;
     scroll-timeline: --htmlscroll y;
     scroll-timeline: --htmlscroll vertical;
 }
