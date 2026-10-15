@@ -19,13 +19,17 @@
             "mainEntity": {
                 "@type": "Person",
                 "name": "Kevin Campos",
+                "alternateName": [
+                    "Kevin De Souza Campos",
+                    "Kesc23"
+                ],
                 "url": "https://kevincampos.com.br",
                 "image": "https://kevincampos.com.br/kevin.png",
                 "sameAs": [
                     "https://www.linkedin.com/in/kevinsouzacampos/",
                     "https://github.com/kesc23/"
                 ],
-                "jobTitle": "Software Developer Analyst",
+                "jobTitle": "AI Software Engineer",
                 "worksFor": {
                     "@type": "Organization",
                     "name": "Inter",
